@@ -1,17 +1,15 @@
 <#
-  .NOTES
-  ===========================================================================
-   Created on:   	11.07.2023
-   Created by:   	Simon Skotheimsvik
-   Filename:     	Branding-Detection.ps1
-   Info:          https://skotheimsvik.no
-  ===========================================================================
-  
-  .DESCRIPTION
-    This script sets the support information for Windows10 and Windows 11
-    The information is found in "Settings - System - About - Support" and in "WinVer"
-    The script can be assigned as Detection script in Microsoft Intune
+    .SYNOPSIS 
+    Change WinVer and OEM Info
+
+    .DESCRIPTION
+    Install:   C:\Windows\SysNative\WindowsPowershell\v1.0\PowerShell.exe -ExecutionPolicy Bypass -Command .\detection.ps1
     
+    .ENVIRONMENT
+    PowerShell 5.0
+    
+    .AUTHOR
+    Niklas Rast
 #>
 
 $BrandingContent = @"
