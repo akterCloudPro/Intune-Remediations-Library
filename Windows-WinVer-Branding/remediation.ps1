@@ -1,17 +1,15 @@
 <#
-  .NOTES
-  ===========================================================================
-   Created on:   	11.07.2023
-   Created by:   	Simon Skotheimsvik
-   Filename:     	Branding-Remediation.ps1
-   Info:          https://skotheimsvik.no
-  ===========================================================================
-  
-  .DESCRIPTION
-    This script sets the support information for Windows10 and Windows 11
-    The information is found in Settings - System - About - Support
-    The script can be assigned as a Remediation script in Microsoft Intune
+    .SYNOPSIS 
+    Change WinVer and OEM Info
+
+    .DESCRIPTION
+    Install:   C:\Windows\SysNative\WindowsPowershell\v1.0\PowerShell.exe -ExecutionPolicy Bypass -Command .\remediation.ps1
     
+    .ENVIRONMENT
+    PowerShell 5.0
+    
+    .AUTHOR
+    Niklas Rast
 #>
 
 $BrandingContent = @"
