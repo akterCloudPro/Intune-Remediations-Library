@@ -14,8 +14,8 @@
 
 #Settings
 $activeconnections = (Get-NetConnectionProfile).Name
-$corporateNetwork = "RastCloudCorporated"
-$corporateProfile = "DomainAuthenticated"
+$corporateNetwork = "CorporateNetwork"
+$corporateProfile = "Private"
 
 #Update the profile category
 Get-NetConnectionProfile -Name "$corporateNetwork" | Set-NetConnectionProfile -NetworkCategory $corporateProfile
