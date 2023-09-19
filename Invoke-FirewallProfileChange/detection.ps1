@@ -14,8 +14,8 @@
 
 #Settings
 $activeconnections = (Get-NetConnectionProfile).Name
-$corporateNetwork = "RastCloudCorporated"
-$corporateProfile = "DomainAuthenticated"
+$corporateNetwork = "CorporateNetwork"
+$corporateProfile = "Private"
 
 #Check if profile update is needed
 if($activeconnections -contains $corporateNetwork){
