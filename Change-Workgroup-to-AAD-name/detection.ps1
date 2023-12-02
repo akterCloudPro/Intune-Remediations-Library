@@ -22,7 +22,7 @@ $AADName = (Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Cloud
 $CurrentWorkgroupName = (Get-WmiObject -Class Win32_ComputerSystem).Domain
 
 if($CurrentWorkgroupName -ne $AADName){
-    return 1
-}else{
     return 0
+}else{
+    return 1
 }
